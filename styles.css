@@ -1,0 +1,54 @@
+
+
+
+body {/* body element */
+    background-color: grey;
+}
+
+#nav-tab{/* contains the two title divs */
+    padding: 2%;
+    background-color: black;
+}
+
+#main-title{/* main title element */
+    background-color: yellow;
+}
+
+#nav-buttons{/* the element containing nav-buttons */
+    background-color: aqua;
+}
+
+.buttons{/*nav-buttons*/
+    background-color: azure;
+    margin-top: 5%;
+}
+
+
+#content{/* contains the meat of the site, how to's */
+    background-color: bisque;
+    width: fit-content;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+
+.sections{/* element containing each sections content */
+    background-color: blue;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.section-title{/* title of sections */
+    background-color: blueviolet;
+}
+
+.video-wrapper{/* element containing video content*/
+    background-color: yellow;
+    padding: 2%;
+
+}
+
+.video-description{/* element containing video description text*/
+    color: white;
+    background-color: grey;
+}
+
