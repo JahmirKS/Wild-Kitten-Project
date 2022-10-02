@@ -26,7 +26,7 @@ body {/* body element */
 
 #content{/* contains the meat of the site, how to's */
     background-color: bisque;
-    width: fit-content;
+    width: 90%;
     margin-top: 2%;
     padding: 2%;
 }
