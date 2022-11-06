@@ -1,54 +1,125 @@
+@media (prefers-reduced-motion: no-preference){* {
+    scroll-behavior: smooth;
+  }}
 
-
-
-body {/* body element */
-    background-color: grey;
+:root{
+    --base-color: rgb(178, 189, 198);
 }
 
+body {/* body element */
+    background-color: var(--base-color);
+    margin: 0%;
+    padding: 0%;
+     
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+   
+}
+
+
+
 #nav-tab{/* contains the two title divs */
-    padding: 2%;
-    background-color: black;
+    bottom: 0;
+    top:0; 
+    background-color: darkgrey;
+ 
+    position: sticky;
+    
+    height: fit-content;
+    font-size: small;
+    
+}
+
+h1{
+   
+    padding: 0;
+    margin-top: 0;
+
 }
 
 #main-title{/* main title element */
-    background-color: yellow;
+    color: black;
+    
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #nav-buttons{/* the element containing nav-buttons */
-    background-color: aqua;
+   
+    justify-content: flex-end;
+    padding: 0%;
+    margin: 0;
+   
+
+    
+    width: 100%;
+   
+    display: flex;
 }
 
 .buttons{/*nav-buttons*/
-    background-color: azure;
-    margin-top: 5%;
+    
+    width: 100%;
+    padding-top: 0%;
+    margin: 0;
+    
+    
+    padding-right: 2%;
+    font-size: 80%;
+    padding-bottom: 0;
+    
+   
 }
 
 
+
+
 #content{/* contains the meat of the site, how to's */
-    background-color: bisque;
-    width: 90%;
-    margin-top: 2%;
-    padding: 2%;
+   
+    align-self: center;
+   
+   
+    
+   
+    
 }
 
 
 .sections{/* element containing each sections content */
-    background-color: blue;
+   text-align: center;
+   display: flex;
+    flex-direction: column;
     padding: 2%;
     margin-bottom: 2%;
+   
 }
 .section-title{/* title of sections */
-    background-color: blueviolet;
+    background-color: bisque;
+    width: 80%;
+    border-radius: 10%;
+    align-self: center;
+    color: black;
 }
 
-.video-wrapper{/* element containing video content*/
-    background-color: yellow;
-    padding: 2%;
-
+.video-wrapper {/* element containing video content*/
+    text-align: center;
+   
+  
 }
+
+iframe{
+    min-width: 250px;
+}
+
+
+
+
 
 .video-description{/* element containing video description text*/
-    color: white;
-    background-color: grey;
 }
 
