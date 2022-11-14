@@ -3,13 +3,26 @@
   }}
 
 :root{
-    --base-color: rgb(178, 189, 198);
+    
+    --color-dark-yellow: #F2C53D;
+    --color-light-orange: #F29F05;
+    --color-dark-orange: #BF4904;
+    --color-background: #591902;
+    --title-color:black;
+    --white: #F2F2F2;
+
+}
+
+*
+{
+    color: var(--white);
 }
 
 body {/* body element */
-    background-color: var(--base-color);
+    background-color: var(--color-background);
     margin: 0%;
     padding: 0%;
+    
      
     text-align: center;
     display: flex;
@@ -24,9 +37,12 @@ body {/* body element */
 #nav-tab{/* contains the two title divs */
     bottom: 0;
     top:0; 
-    background-color: darkgrey;
+   
+    background: linear-gradient(var(--color-dark-yellow),var(--color-dark-orange));
  
     position: sticky;
+    display: block;
+   
     
     height: fit-content;
     font-size: small;
@@ -37,11 +53,13 @@ h1{
    
     padding: 0;
     margin-top: 0;
+    margin-bottom: 0;
 
 }
 
 #main-title{/* main title element */
-    color: black;
+    color: var(--title-color);
+   
     
     font-size: xx-large;
     text-align: center;
@@ -57,7 +75,7 @@ h1{
    
 
     
-    width: 100%;
+    width: 100vw;
    
     display: flex;
 }
@@ -72,7 +90,20 @@ h1{
     padding-right: 2%;
     font-size: 80%;
     padding-bottom: 0;
+    transition: transform ease 300ms;
+}
+
+.buttons:hover{
+    transform: translate(0,-5px);
+}
+a{
+   
+    text-decoration: none;
     
+}
+
+a:hover{
+   
    
 }
 
@@ -82,6 +113,7 @@ h1{
 #content{/* contains the meat of the site, how to's */
    
     align-self: center;
+    width: 100%
    
    
     
@@ -99,11 +131,11 @@ h1{
    
 }
 .section-title{/* title of sections */
-    background-color: bisque;
-    width: 80%;
-    border-radius: 10%;
+    background: linear-gradient(to left,var(--color-dark-yellow),var(--color-dark-orange));
+    width: 100%;
+    border-radius: 5000000px;
     align-self: center;
-    color: black;
+    color: var(--white);
 }
 
 .video-wrapper {/* element containing video content*/
@@ -121,5 +153,7 @@ iframe{
 
 
 .video-description{/* element containing video description text*/
+   /* display: none; */
+   text-align: left;
 }
 
