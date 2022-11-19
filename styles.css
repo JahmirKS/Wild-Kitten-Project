@@ -105,7 +105,7 @@ a{
 }
 
 a:hover{
-   
+   text-decoration:underline;
    
 }
 
@@ -130,6 +130,7 @@ a:hover{
     flex-direction: column;
     padding: 2%;
     margin-bottom: 2%;
+    
    
 }
 .section-title{/* title of sections */
@@ -138,6 +139,7 @@ a:hover{
     border-radius: 5000000px;
     align-self: center;
     color: var(--white);
+    
 }
 
 .video-wrapper {/* element containing video content*/
