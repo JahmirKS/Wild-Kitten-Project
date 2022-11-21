@@ -63,8 +63,10 @@ h1{
     color: var(--title-color);
    
     
-    font-size: xx-large;
+    font-family: 'Rubik Distressed', cursive;
     text-align: center;
+    font-size: xx-large;
+    color: var(--white);
     margin-bottom: 0;
     padding: 0;
 }
@@ -140,6 +142,7 @@ a:hover{
     border-radius: 5000000px;
     align-self: center;
     color: var(--white);
+    font-family: 'Rubik Distressed', cursive;
   
     
     
