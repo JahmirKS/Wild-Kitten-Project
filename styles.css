@@ -74,6 +74,7 @@ h1{
     justify-content: flex-end;
     padding: 0%;
     margin: 0;
+    z-index: 5;
    
 
     
@@ -139,6 +140,8 @@ a:hover{
     border-radius: 5000000px;
     align-self: center;
     color: var(--white);
+  
+    
     
 }
 
@@ -151,14 +154,29 @@ a:hover{
 }
 
 .t-btn{
-    align-self: flex-start;
-    font-size: larger;
+   align-self: flex-start;
+   font-size: larger;
    color: #2A6BBF;
+   display: flex;
    background: none;
    border: none;
-  
+   justify-content: center;
+   align-items: center;
+}
+
+.t-btn::after{
+    content: "\2193";
+   
+    position: relative;
+    padding-left: 5px;
+    bottom:2px;
+
+    
+   
 
 }
+
+
 .t-btnc{
     margin-left: 10%;
     display: flex;
@@ -183,10 +201,11 @@ a:hover{
 }
 
 .t-btn:hover{
-    text-decoration: underline;
-    color:#2A6BBe;
+   
+    color:#77acf0;
     cursor: pointer;
 }
+
 
 
 
