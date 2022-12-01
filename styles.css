@@ -182,6 +182,9 @@ a:hover{
 
 .time-stop{
     color:#3D90D9;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .modal{
@@ -198,7 +201,7 @@ a:hover{
 .t-btn:hover{
    
     color:#77acf0;
-    cursor: pointer;
+   
 }
 
 
