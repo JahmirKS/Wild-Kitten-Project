@@ -19,14 +19,14 @@
             <nav class="buttons" id="sections-1"><a href="#section-1">Air Hockey</a></nav>
             <nav class="buttons" id="sections-2"><a href="#section-2">Subway Surfer</a></nav>
             <nav class="buttons" id="sections-3"><a href="#section-3">Dino</a></nav>
-            <nav class="buttons" id="sections-4"><a href="#section-4">AI</a></nav>
-            <nav class="buttons" id="sections-5"><a href="#section-5">Blocking</a></nav>
+           
 
 
 
         </div></h1>
 
-
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" onclick="mute('.video-1','video-2','video-3')">
+        <label class="top-label" for="vehicle1"> Mute all videos</label><br>
     </header>
 
 <main id="content">
@@ -101,42 +101,7 @@
 
     </section>
 
-    <section class="sections" id="section-4">
-        <h2 class="section-title"> AI</h2>
-
-        <div class="video-wrapper">
-        <iframe width="70%" min-width="350px"  height="350px"  src="https://www.youtube.com/embed/wb5yAoSRmmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="t-btnc"><button class="t-btn" onclick="changeDisplay('.modal-4')">Transcript</button><p class="modal modal-4"><span class="time-stop">[00:00:00]</span><br> So today we will be going over this game called air hockey, and today I will just be teaching you the <br><br>
-                <span class="time-stop">[00:00:10]</span> <br>basis and instructions to play this game, you can choose either one player or two players. If I choose one<br><br>
-                <span class="time-stop">[00:00:20]</span><br>player, you can select a difficulty level for the opponents. Let's choose easy. You can choose <br><br>
-                <span class="time-stop">[00:00:30]</span> <br>a number of pucks. So there's a one puck option or a two pucks option. Let's do one puck right now, and then all you have to do for <br><br>
-                <span class="time-stop">[00:00:40]</span> <br>this mobile game is just try to get the puck in. Just like air hockey! It's a very simple game. There's a goal right there. <br><br>
-                <span class="time-stop">[00:00:50]</span><br> I am pretty sure that the goal of this game is to get seven goals against your opponents.<br> <br>
-            </p></div>
-        </div>
-
-        <p class="video-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odio optio eius deserunt tempore doloribus animi ullam dolore quaerat et ipsam deleniti voluptatum quia, doloremque obcaecati nemo? Voluptatem, non animi.</p>
-
-    </section>
-
-    <section class="sections" id="section-5">
-        <h2 class="section-title"> Blocking</h2>
-        
-        <div class="video-wrapper">
-            <iframe  width="70%" min-width="350px" height="350px"  src="https://www.youtube.com/embed/wb5yAoSRmmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="t-btnc"><button class="t-btn" onclick="changeDisplay('.modal-5')">Transcript</button><p class="modal modal-5"><span class="time-stop">[00:00:00]</span><br> So today we will be going over this game called air hockey, and today I will just be teaching you the <br><br>
-                <span class="time-stop">[00:00:10]</span> <br>basis and instructions to play this game, you can choose either one player or two players. If I choose one<br><br>
-                <span class="time-stop">[00:00:20]</span><br>player, you can select a difficulty level for the opponents. Let's choose easy. You can choose <br><br>
-                <span class="time-stop">[00:00:30]</span> <br>a number of pucks. So there's a one puck option or a two pucks option. Let's do one puck right now, and then all you have to do for <br><br>
-                <span class="time-stop">[00:00:40]</span> <br>this mobile game is just try to get the puck in. Just like air hockey! It's a very simple game. There's a goal right there. <br><br>
-                <span class="time-stop">[00:00:50]</span><br> I am pretty sure that the goal of this game is to get seven goals against your opponents.<br> <br>
-                </p></div>
-            </div>
-
-            <p class="video-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, labore tenetur. Facilis, fugit facere assumenda laborum ipsam ex sed libero ducimus? Provident maiores officiis eligendi dolores voluptatum nemo recusandae tempore.</p>
-
-    </section>
-
+    
 <script>
     function changeDisplay(value){
         if(document.querySelector(value).style.display != 'block'){
@@ -148,7 +113,28 @@
 
     // air hockey links   
     function changeTime(value, time,video){
+        if (document.getElementById('vehicle1').checked){
+            document.querySelector(value).src= "https://"+video+"?start="+time+"&autoplay=1&mute=1";
+        }
+        
+        else{
         document.querySelector(value).src= "https://"+video+"?start="+time+"&autoplay=1&mute=0";
+        }
+    }
+
+    function mute( video_1,video_2,vide0_3){
+        if (document.getElementById('vehicle1').checked){
+            document.querySelector(video_1).src= "https://www.youtube.com/embed/wb5yAoSRmmQ?mute=1";
+            document.querySelector(video_2).src=  "https://www.youtube.com/embed/XjbVLYP-O0M?mute=1";
+            document.querySelector(vide0_3).src=  "https://www.youtube.com/embed/GuBRGjGGCyI?mute=1";
+        }
+
+        else{
+            document.querySelector(video_1).src= "https://www.youtube.com/embed/wb5yAoSRmmQ?mute=0";
+            document.querySelector(video_2).src=  "https://www.youtube.com/embed/XjbVLYP-O0M?mute=0";
+            document.querySelector(vide0_3).src=  "https://www.youtube.com/embed/GuBRGjGGCyI?mute=0";
+
+        }
     }
    
 

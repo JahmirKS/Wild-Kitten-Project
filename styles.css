@@ -66,10 +66,28 @@ h1{
     
     
     text-align: center;
+    font-weight: bolder;
     font-size: xx-large;
     color: var(--white);
     margin-bottom: 0;
     padding: 0;
+}
+
+
+.top-label{
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+#vehicle1{
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    
+    
 }
 
 #nav-buttons{/* the element containing nav-buttons */
@@ -95,9 +113,10 @@ h1{
     
     
     padding-right: 2%;
-    font-size: 80%;
+    font-size: 30px;
     padding-bottom: 0;
     transition: transform ease 300ms;
+    
 }
 
 .buttons:hover{
@@ -107,6 +126,8 @@ a{
    
     text-decoration: none;
     color: black;
+    
+
    
     
 }
@@ -278,6 +299,20 @@ footer label{
 
     .time-stop{
         font-size: medium;
+    }
+
+    label{
+        font-size: small;
+        
+        right: 10px;
+
+    }
+
+    #vehicle1{
+        font-size: small;
+        
+        right: 10px;
+        top:15px;
     }
 
 
